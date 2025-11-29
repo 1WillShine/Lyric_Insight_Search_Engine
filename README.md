@@ -54,19 +54,18 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Deploy to Streamlit Cloud
+### Deploy to Streamlit Cloud
 
-Push to GitHub
+  1. Push to GitHub
 
-Go to https://streamlit.io/cloud
+  2. Go to https://streamlit.io/cloud
 
-Deploy → pick the repo
+  3. Deploy → pick the repo
 
-Set working directory to repository root
+  4. Set working directory to repository root
 
-No additional config needed
+  5. No additional config needed
 
-After deployment, you’ll have a public web app.
 
 
 
