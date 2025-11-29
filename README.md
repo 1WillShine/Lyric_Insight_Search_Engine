@@ -33,11 +33,22 @@ It includes:
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/YOUR_USERNAME/lyric-insights.git
+
 cd lyric-insights
 
 python3 -m venv venv
+
 source venv/bin/activate
+
 pip install -r requirements.txt
+
+' ''' '
+
+
+
+
+
+
 
 
 
