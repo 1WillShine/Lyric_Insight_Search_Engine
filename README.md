@@ -33,18 +33,40 @@ It includes:
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/YOUR_USERNAME/lyric-insights.git
-
 cd lyric-insights
+```
 
+### 2. Create and activate a virtual environment
+```bash
 python3 -m venv venv
-
 source venv/bin/activate
+```
 
+### 3. pip install -r requirements.txt
+```bash
 pip install -r requirements.txt
+```
 
-' ''' '
 
+## 🚀 Running the Streamlit App
+## Run locally
+```bash
+streamlit run app.py
+```
 
+Deploy to Streamlit Cloud
+
+Push to GitHub
+
+Go to https://streamlit.io/cloud
+
+Deploy → pick the repo
+
+Set working directory to repository root
+
+No additional config needed
+
+After deployment, you’ll have a public web app.
 
 
 
