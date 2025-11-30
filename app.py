@@ -1,3 +1,16 @@
+import streamlit as st
+from src.utils import *
+from src.tfidf_search import *
+from src.recommender import *
+
+df = load_data()
+
+# PAGE SELECTOR — MUST COME FIRST
+page = st.sidebar.selectbox(
+    "Choose a page:",
+    ["Lyric Search", "Song Similarity", "TF-IDF Explorer"]
+)
+
 # ============================================================
 # PAGE 1 — LYRIC SEARCH
 # ============================================================
