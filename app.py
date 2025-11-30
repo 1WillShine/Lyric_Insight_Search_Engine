@@ -15,7 +15,7 @@ from src.tfidf_search import (
 @st.cache_data
 def load_data():
     df = load_lyrics_csv("data/lyrics.csv")
-    ensure_text_column(df, "lyrics")
+    ensure_text_column(df, "Lyrics")
     return df
 
 df = load_data()
