@@ -2,8 +2,10 @@ import streamlit as st
 from src.utils import *
 from src.tfidf_search import *
 from src.recommender import *
+from src.utils import load_lyrics_csv, ensure_text_column
 
-df = load_lyrics_csv()
+df = load_lyrics_csv("data/lyrics.csv")
+ensure_text_column(df, "Lyrics")
 
 # PAGE SELECTOR — MUST COME FIRST
 page = st.sidebar.selectbox(
