@@ -111,19 +111,16 @@ def song_option(i: int) -> str:
 # ---------- PAGE: Lyric Search ----------
 if page == "Lyric Search":
     st.header("🔍 Lyric Search — press Enter to run")
-    # use form so user can hit Enter to submit
-    with st.form("lyric_search_form", clear_on_submit=False, submit_on_enter=True):
-        query = st.text_input("Enter search query (press Enter to run)")
-        submitted = st.form_submit_button("Search")  # still provides button for clarity
+
+    query = st.text_input("Enter search query (press Enter to submit)")
 
     if query:
         results = search_lyrics(query, vect, mat, top_n=20)
         if not results:
-            st.info("No results (similarity scores are zero). Try a different query or broaden terms.")
+            st.info("No results (similarity scores are zero). Try a different query.")
         else:
             st.subheader("Results")
             for idx, score in results:
-                # Guard against index mismatch
                 if idx < 0 or idx >= len(df):
                     continue
                 row = df.iloc[idx]
@@ -134,6 +131,7 @@ if page == "Lyric Search":
                 snippet = str(row[col_lyrics])[:400].replace("\n", " ")
                 st.write(snippet + ("…" if len(str(row[col_lyrics])) > 400 else ""))
                 st.markdown("---")
+
 
 # ---------- PAGE: Song Similarity ----------
 elif page == "Song Similarity":
