@@ -3,7 +3,7 @@ from src.utils import *
 from src.tfidf_search import *
 from src.recommender import *
 
-df = _lyrics_csv()
+df = load_lyrics_csv()
 
 # PAGE SELECTOR — MUST COME FIRST
 page = st.sidebar.selectbox(
