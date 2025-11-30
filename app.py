@@ -41,7 +41,7 @@ if page == "Lyric Search":
     query = st.text_input("Enter search query")
 
     if st.button("Search"):
-        vect, mat = build_tfidf_matrix(df["lyrics"].tolist(), min_df=1)
+        vect, mat = build_tfidf_matrix(df["Lyrics"].tolist(), min_df=1)
         results = search_lyrics(query, vect, mat, top_n=15)
 
         st.subheader("Results:")
@@ -85,7 +85,7 @@ elif page == "Song Similarity":
 else:
     st.header("📚 TF-IDF Top Terms Explorer")
 
-    vect, mat = build_tfidf_matrix(df["lyrics"].tolist(), min_df=1)
+    vect, mat = build_tfidf_matrix(df["Lyrics"].tolist(), min_df=1)
 
     row_index = st.number_input(
         "Pick a song index:", 
