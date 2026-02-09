@@ -24,7 +24,7 @@ def cli_tfidf(args):
         idx = args.top_terms
         vec = mat[idx]
         top = top_k_terms_for_doc(vec, vect, k=20)
-        print(f"Top terms for index {idx}:")
+        print(f"Top terms computed for index {idx}:")
         for term, score in top:
             print(f"{term}\t{score:.4f}")
     if args.query is not None:
