@@ -1,6 +1,6 @@
-# 🎵 Lyrics with Intelligence   
+# 🎵 Lyrics with Intelligence 
 ### A TF-IDF Lyric Search Engine & Audio-Feature Song Recommender  
-A standalone, production-ready version of my original Data Science class project — converted from a Jupyter notebook into a clean Python package with a lightweight Streamlit web app.
+A standalone, production-ready version of my original Data Science class project(DSC10) — converted from a Jupyter notebook into a clean Python package with a lightweight Streamlit web app.
 
 ---
 
